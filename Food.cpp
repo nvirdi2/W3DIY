@@ -77,7 +77,8 @@ namespace sdds
 
   bool Food::isValid() const
   {
-    return FoodName[0] != '\0' && Consumetime >= 1 && Consumetime <= 4;
+    return (FoodName[0] != '\0' &&
+               Consumetime >= 1 && Consumetime <= 4);
   }
 
 
