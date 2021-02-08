@@ -16,6 +16,8 @@ using namespace std;
 
 namespace sdds
 {
+    
+    
     int CalorieList::totalNumOfCal() const
     {
         int TotalNum = 0;
@@ -27,6 +29,7 @@ namespace sdds
         } return TotalNum;
     }
 
+    
     void CalorieList::Title() const 
     {
         cout << "+----------------------------------------------------+" << endl;
@@ -45,6 +48,7 @@ namespace sdds
         cout << "+--------------------------------+------+------------+" << endl;
     }
 
+    
     void CalorieList::footer() const
     {
         cout << "+--------------------------------+------+------------+" << endl;
@@ -71,11 +75,13 @@ namespace sdds
         cout << "+----------------------------------------------------+" << endl;
     }
 
+    
     void CalorieList::setEmpty() 
     {
         m_items = nullptr;
     }
 
+    
     bool CalorieList::isValid() const 
     {
         bool valid = true;
@@ -89,6 +95,7 @@ namespace sdds
         } return valid;
     }
 
+    
     void CalorieList::init(int size)
     {
         if (size < 1)
@@ -112,6 +119,7 @@ namespace sdds
         }
     }
 
+    
     bool CalorieList::add(const char* item_name, int calories, int when)
     {
         if (m_itemsAdded < m_noOfItems) 
@@ -123,6 +131,7 @@ namespace sdds
         } return false;
     }
 
+    
     void CalorieList::display() const
     {
         Title();
@@ -137,6 +146,7 @@ namespace sdds
         footer();
     }
 
+    
     void CalorieList::deallocate()
     {
         delete[] m_items;
