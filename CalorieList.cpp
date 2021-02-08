@@ -140,6 +140,6 @@ namespace sdds
     void CalorieList::deallocate()
     {
         delete[] m_items;
-        m_items = nullptr;
+        //m_items = nullptr;
     }
 }
