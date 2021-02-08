@@ -9,7 +9,7 @@
 #include <iomanip>
 
 #include "cstring.h"
-#include "Food.h"
+//#include "Food.h"
 #include "CalorieList.h"
 
 using namespace std;
