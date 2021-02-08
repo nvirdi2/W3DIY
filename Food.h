@@ -15,12 +15,14 @@ namespace sdds
     char FoodName[31];
     int calNUM;
     int Consumetime;
+    
     void setName(const char* name);
 
     public:
         void setEmpty();
         void set(const char* Fname, int calories, int time);
         void display()const;
+    
         bool isValid()const;
         int calories()const;
   };
